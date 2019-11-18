@@ -1,4 +1,4 @@
-# Ingest Avro from Apache Kafka to DataStax databases
+# Ingest Avro from Apache Kafka™ to DataStax databases
 This example shows how to ingest Avro records from [Kafka](https://kafka.apache.org/) to a table in the [DataStax](https://www.datastax.com/) database using the [DataStax Apache Kafka Connector](https://docs.datastax.com/en/kafka/doc/index.html).
 
 Contributor(s): [Chris Splinter](https://github.com/csplinter), [Tomasz Lelek](https://github.com/tomekl007)
