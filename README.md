@@ -4,8 +4,8 @@ This example shows how to ingest Avro records from [Kafka](https://kafka.apache.
 Contributor(s): [Chris Splinter](https://github.com/csplinter), [Tomasz Lelek](https://github.com/tomekl007)
 
 ## Objectives
-- How to ingest Avro records from Kafka to DataStax databases
-- How to use docker and docker-compose to quickly set up an environment with Zookeeper, Kafka Brokers, Kafka Connect, Confluent Schema Registry and DataStax databases
+- How to ingest Avro records from Kafka to DataStax Enterprise
+- How to use docker and docker-compose to quickly set up an environment with Zookeeper, Kafka Brokers, Kafka Connect, Confluent Schema Registry and DataStax Enterprise
 
 ## Project Layout
 - [Dockerfile-connector](Dockerfile-connector): Dockerfile to build an image of Kafka Connect with the DataStax Kafka Connector installed.
