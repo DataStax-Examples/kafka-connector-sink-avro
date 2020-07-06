@@ -51,7 +51,7 @@ docker-compose up -d
 ```
 
 ### Running
-Now that everything is up and running, it's time to set up the flow of data from Kafka to the DataStax database.
+Now that everything is up and running, it's time to set up the flow of data from Kafka to DataStax Enterprise.
 
 Create the Kafka Topic named `avro-stream` that the connector will read from.
 ```
@@ -79,7 +79,7 @@ Start the DataStax Kafka Connector using the Kafka Connect REST API
 curl -X POST -H "Content-Type: application/json" -d @connector-config.json "http://localhost:8083/connectors"
 ```
 
-Confirm that the rows were written in the DataStax database
+Confirm that the rows were written in DataStax Enterprise
 ```
 docker exec -it datastax-db cqlsh
 ```
