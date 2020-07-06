@@ -17,7 +17,7 @@ Contributor(s): [Chris Splinter](https://github.com/csplinter), [Tomasz Lelek](h
 ## How this works
 After running the docker and docker-compose commands, there will be 6 docker containers running, all using the same docker network.
 
-After writing records to the Kafka Brokers, the DataStax Kafka Connector will be started which will start the stream of records from Kafka to the DataStax database, writing the records to a table in the database.
+After writing records to the Kafka Brokers, the DataStax Kafka Connector will be started which will start the stream of records from Kafka to DataStax Enterprise, writing the records to a table in the database.
 
 ## Setup & Running
 ### Prerequisites
