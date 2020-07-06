@@ -67,8 +67,8 @@ services:
       CONNECT_INTERNAL_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
       CONNECT_ZOOKEEPER_CONNECT: 'zookeeper:2181'
 
-  ddac:
-    image: datastax/ddac
+ dse-server:6.8.1:
+    image: datastax/dse-server:6.8.1
     hostname: datastax-db
     container_name: datastax-db
     environment:
