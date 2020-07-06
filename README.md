@@ -10,7 +10,7 @@ Contributor(s): [Chris Splinter](https://github.com/csplinter), [Tomasz Lelek](h
 ## Project Layout
 - [Dockerfile-connector](Dockerfile-connector): Dockerfile to build an image of Kafka Connect with the DataStax Kafka Connector installed.
 - [Dockerfile-producer](Dockerfile-producer): Dockerfile to build an image for the producer contained in this repository.
-- [docker-compose.yml](docker-compose.yml): Uses [Confluent](https://www.confluent.io/) and DataStax docker images to set up Zookeeper, Kafka Brokers, Kafka Connect, Confluent Schema Registry, DataStax Distribution of Apache Cassandra ( DDAC ), and the producer container.
+- [docker-compose.yml](docker-compose.yml): Uses [Confluent](https://www.confluent.io/) and DataStax docker images to set up Zookeeper, Kafka Brokers, Kafka Connect, Confluent Schema Registry, DataStax Enterprise, and the producer container.
 - [connector-config.json](connector-config.json): Configuration file for the DataStax Kafka Connector to be used with the distributed Kafka Connect Worker.
 - [producer](producer/): Contains the Kafka Avro Producer to write records to Kafka. Uses the AvroSerializer for the Kafka record key and record value.
 
@@ -45,7 +45,7 @@ Build the Avro Java Producer image
 docker build . -t kafka-producer -f Dockerfile-producer
 ```
 
-Start Zookeeper, Kafka Brokers, Kafka Connect, Confluent Schema Registry, DDAC, and the producer containers
+Start Zookeeper, Kafka Brokers, Kafka Connect, Confluent Schema Registry, DSE, and the producer containers
 ```
 docker-compose up -d
 ```
