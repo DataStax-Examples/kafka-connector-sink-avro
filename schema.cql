@@ -1,4 +1,4 @@
-create keyspace if not exists kafka_examples with replication = {'class': 'NetworkTopologyStrategy', 'dc1': 1};
+create keyspace if not exists kafka_examples with replication = {'class': 'NetworkTopologyStrategy', 'datacenter1': 1};
 
 CREATE type if not exists kafka_examples.segment0_udt (
 segment0_0 text,
